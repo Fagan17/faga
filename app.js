@@ -1,9 +1,10 @@
-let fullName = "Fagan Maharramov";
-console.log(fullName.split(" ")[0][0]);
-console.log(fullName.split(" ")[1][0]);
-let userName = "Fagan Maharramov";
-let cut = (userName.trim().split(" "));
-let firstName = cut[0]
-let lastName = cut[1]
-let reversed = lastName + " " + firstName;
-console.log(reversed);
+let user1 = prompt("melumatinizi daxil edin")
+console.log(user1.length)
+let user2 = prompt("melumatinizi daxil edin")
+console.log(user2.includes("e"))
+let user3 = prompt("melumatinizi daxil edin")
+console.log(user3.startsWith("code"))
+let user4 = prompt("melumatinizi daxil edin")
+console.log(user4.endsWith("code"))
+let user5 = prompt("melumatinizi daxil edin")
+console.log(user5.replaceAll("t","####"))
