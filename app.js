@@ -1,16 +1,15 @@
-function isValidNumber(num){
-let s = String(num);
-return s.length === 12 && s.startsWith("+7")
+let a = 90
+while(a < 990){
+    a+=10;
+    console.log(a)
 }
-console.log(isValidNumber("+71213112223"))
+let total = 0;
+let b = 11;
+while (b <= 99){
+  total += b;
+  b += 2;  
+}
+console.log(total); 
 
-function numCounter(count){
-   let s = String(count);
-   return s.length
-}
-console.log(numCounter("SALAM"))
 
-function capitalizeWords(text) {
-  return text.replace(/\b\w/g, char => char.toUpperCase());
-}
-console.log(capitalizeWords("Hey my name is Fagan"))
+  
