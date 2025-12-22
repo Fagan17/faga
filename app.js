@@ -15,3 +15,22 @@ if (varEded) {
 } else {
   console.log("Metnde reqem yoxdur.");
 }
+
+
+
+let metn = prompt("Metni daxil edin");
+let hasNumber = false;
+for (let i= 0; i <metn.length; i++){
+  if (!isNaN(metn[i]) && metn[i]!== " "){
+    hasNumber = true
+    break;
+
+  }
+}
+if (hasNumber){
+console.log("Metnde reqem var");
+}else{
+  console.log("Metnde reqem yoxdur");
+}
+
+
