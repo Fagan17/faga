@@ -1,15 +1,17 @@
-let a = 90
-while(a < 990){
-    a+=10;
-    console.log(a)
-}
-let total = 0;
-let b = 11;
-while (b <= 99){
-  total += b;
-  b += 2;  
-}
-console.log(total); 
 
+let text = prompt("Metni daxil edin");
+let i = 0
+let varEded = false;
+while (i < text.length) {
+  if (text[i] >= '0' && text[i] <= '9') {
+    varEded = true;
+    break;
+  }
+  i++;
+}
 
-  
+if (varEded) {
+  console.log(" Metnde reqem var.");
+} else {
+  console.log("Metnde reqem yoxdur.");
+}
