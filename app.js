@@ -1,36 +1,11 @@
-
-let text = prompt("Metni daxil edin");
-let i = 0
-let varEded = false;
-while (i < text.length) {
-  if (text[i] >= '0' && text[i] <= '9') {
-    varEded = true;
-    break;
-  }
-  i++;
-}
-
-if (varEded) {
-  console.log(" Metnde reqem var.");
-} else {
-  console.log("Metnde reqem yoxdur.");
-}
-
-
-
-let metn = prompt("Metni daxil edin");
-let hasNumber = false;
-for (let i= 0; i <metn.length; i++){
-  if (!isNaN(metn[i]) && metn[i]!== " "){
-    hasNumber = true
-    break;
-
+let arr = [7,3,8,9,2,12];
+let newArr = [];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < 5) {
+    newArr.push(arr[i]);      
+  } else {
+    newArr.unshift(arr[i]);  
   }
 }
-if (hasNumber){
-console.log("Metnde reqem var");
-}else{
-  console.log("Metnde reqem yoxdur");
-}
 
-
+console.log(newArr);
