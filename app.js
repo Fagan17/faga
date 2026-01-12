@@ -1,17 +1,25 @@
+let arr = [1,2,3,4,5,6,7,8,9];
+let sum = 0;
 
-function reqemler(arr) {
-  let musbet = 0;
-  let menfi = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      musbet++;
-    } else {
-      menfi++;
-    }
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 !== 0) {
+    sum += arr[i];
   }
-  return {
-    even: musbet,
-    odd: menfi
-  };
 }
-console.log(reqemler([1, 2, 3, 4, 5, 6]));
+
+console.log(sum); 
+
+
+let a = ["js", "front", "array","css"];
+let result = [];
+
+for (let i = 0; i < a.length; i++) {
+  let reversed = a[i]
+    .split("")
+    .sort((a, b) => -1)
+    .join("");
+
+  result.push(reversed);
+}
+
+console.log(result); 
