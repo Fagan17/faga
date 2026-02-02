@@ -1,3 +1,23 @@
-.solo{
-  background-color: blue;
-}
+   img {
+            width: 350px;
+            display: block;
+            margin: 30px auto;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .shrink {
+            transform: scale(0.7);
+            opacity: 0;
+        }
+
+        .grow {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
