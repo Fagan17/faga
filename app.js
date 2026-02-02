@@ -1,4 +1,4 @@
- const images = [
+let images = [
             "./WhatsApp Image 2026-02-02 at 04.44.57.jpeg",
             "./WhatsApp Image 2026-02-02 at 04.44.58.jpeg",
             "./WhatsApp Image 2026-02-02 at 04.44.58 (1).jpeg",
@@ -6,7 +6,7 @@
         ];
 
         let index = 0;
-        const img = document.getElementById("myImage");
+        let img = document.getElementById("myImage");
 
         function changeImage() {
             
