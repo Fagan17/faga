@@ -1,23 +1,27 @@
-   img {
-            width: 350px;
-            display: block;
-            margin: 30px auto;
-            transition: transform 0.4s ease, opacity 0.4s ease;
-        }
+ body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
-        .shrink {
-            transform: scale(0.7);
-            opacity: 0;
-        }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
 
-        .grow {
-            transform: scale(1);
-            opacity: 1;
-        }
+ .shape {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
 
-        button {
-            display: block;
-            margin: 0 auto;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+
+  .big {
+    transform: scale(1.5);
+  }
+
+  .small {
+    transform: scale(0.8);
+  }

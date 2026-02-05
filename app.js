@@ -1,23 +1,13 @@
-let images = [
-            "./WhatsApp Image 2026-02-02 at 04.44.57.jpeg",
-            "./WhatsApp Image 2026-02-02 at 04.44.58.jpeg",
-            "./WhatsApp Image 2026-02-02 at 04.44.58 (1).jpeg",
-            "./WhatsApp Image 2026-02-02 at 04.44.58 (2).jpeg"
-        ];
+ const shapes = document.querySelectorAll(".shape");
 
-        let index = 0;
-        let img = document.getElementById("myImage");
+  shapes.forEach(shape => {
+    shape.addEventListener("click", () => {
+      shapes.forEach(s => {
+        s.classList.remove("big");
+        s.classList.add("small");
+      });
 
-        function changeImage() {
-            
-            img.classList.remove("grow");
-            img.classList.add("shrink");
-
-            setTimeout(() => {
-    
-                index = (index + 1) % images.length;
-                img.src = images[index];
-                img.classList.remove("shrink");
-                img.classList.add("grow");
-            }, 400);
-        }
+      shape.classList.remove("small");
+      shape.classList.add("big");
+    });
+  });
