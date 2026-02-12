@@ -1,13 +1,23 @@
- const shapes = document.querySelectorAll(".shape");
+const buttons = document.querySelectorAll(".filter-btn");
+const items = document.querySelectorAll(".item");
 
-  shapes.forEach(shape => {
-    shape.addEventListener("click", () => {
-      shapes.forEach(s => {
-        s.classList.remove("big");
-        s.classList.add("small");
-      });
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
 
-      shape.classList.remove("small");
-      shape.classList.add("big");
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filter = btn.dataset.filter;
+
+    items.forEach(item => {
+      if (filter === "all") {
+        item.style.display = "block";
+      } else {
+        item.style.display = item.classList.contains(filter)
+          ? "block"
+          : "none";
+      }
     });
+
   });
+});

@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>document</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+<title>Portfolio Filter</title>
+
+
 </head>
 <body>
- 
- 
 
-<div class="container">
- <img class="shape" src="./WhatsApp Image 2026-02-02 at 04.44.57.jpeg" alt="">
- <img class="shape" src="./WhatsApp Image 2026-02-02 at 04.44.58.jpeg" alt="">
- <img class="shape" src="./WhatsApp Image 2026-02-02 at 04.44.58 (1).jpeg" alt="">
- <img class="shape" src="./WhatsApp Image 2026-02-02 at 04.44.58 (2).jpeg" alt="">
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="packaging">Lux</button>
+  <button class="filter-btn" data-filter="mockup">Normal</button>
 </div>
 
+<div class="portfolio">
+  <div class="item packaging">
+    <img src="./WhatsApp Image 2026-02-12 at 15.22.29 (1).jpeg" alt="">
+  </div>
 
-    <script src="app.js">
-    </script>
-   
+  <div class="item packaging">
+    <img src="./WhatsApp Image 2026-02-12 at 15.22.29 (2).jpeg" alt="">
+  </div>
+
+  <div class="item mockup">
+    <img src="./WhatsApp Image 2026-02-12 at 15.22.29 (3).jpeg" alt="">
+  </div>
+
+  <div class="item mockup">
+    <img src="./WhatsApp Image 2026-02-12 at 15.22.29.jpeg" alt="">
+  </div>
+</div>
+<script src="./app.js"></script>
+
+
 </body>
 </html>
